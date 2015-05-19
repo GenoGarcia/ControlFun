@@ -14,6 +14,7 @@
 		EF5806021B0A457300B94EFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5806011B0A457300B94EFE /* Images.xcassets */; };
 		EF5806051B0A457300B94EFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5806031B0A457300B94EFE /* LaunchScreen.xib */; };
 		EF5806111B0A457300B94EFE /* ControlFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5806101B0A457300B94EFE /* ControlFunTests.m */; };
+		EF58061B1B0A4F4E00B94EFE /* Penguins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF58061A1B0A4F4E00B94EFE /* Penguins.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EF58060A1B0A457300B94EFE /* ControlFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF58060F1B0A457300B94EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5806101B0A457300B94EFE /* ControlFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlFunTests.m; sourceTree = "<group>"; };
+		EF58061A1B0A4F4E00B94EFE /* Penguins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Penguins.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		EF5805F41B0A457300B94EFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF58061A1B0A4F4E00B94EFE /* Penguins.jpg */,
 				EF5805F51B0A457300B94EFE /* Info.plist */,
 				EF5805F61B0A457300B94EFE /* main.m */,
 			);
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF58061B1B0A4F4E00B94EFE /* Penguins.jpg in Resources */,
 				EF5806001B0A457300B94EFE /* Main.storyboard in Resources */,
 				EF5806051B0A457300B94EFE /* LaunchScreen.xib in Resources */,
 				EF5806021B0A457300B94EFE /* Images.xcassets in Resources */,
@@ -350,6 +354,7 @@
 				INFOPLIST_FILE = ControlFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +365,7 @@
 				INFOPLIST_FILE = ControlFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
