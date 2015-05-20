@@ -43,9 +43,6 @@
 - (IBAction)backgroundTap:(id)sender {
     [self.name resignFirstResponder];
     [self.number resignFirstResponder];
-}
-
-- (IBAction)Button:(id)sender {
 
 }
 
@@ -71,5 +68,9 @@ CGFloat red = 128.0, green = 128.0, blue = 128.0;
 
 -(IBAction)switchChanged:(id)sender {
 
+}
+
+- (IBAction)Button:(id)sender {
+    
 }
 @end
