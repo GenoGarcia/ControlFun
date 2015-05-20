@@ -12,6 +12,9 @@
 //Background Image
 @property (strong, nonatomic) IBOutlet UIView *Background;
 
+//Background Color
+@property (strong, nonatomic) IBOutlet UIView *backgroundColor;
+
 //Name & Number Text Fields
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *number;

@@ -422,6 +422,7 @@
 				EF5806161B0A457300B94EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF5806171B0A457300B94EFE /* Build configuration list for PBXNativeTarget "ControlFunTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				EF5806191B0A457300B94EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

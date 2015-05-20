@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.RLabel.text = @"128";
+    self.GLabel.text = @"128";
+    self.BLabel.text = @"128";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,29 +39,34 @@
     [sender resignFirstResponder];
 }
 
+//tap background to exit keyboard.
 - (IBAction)backgroundTap:(id)sender {
     [self.name resignFirstResponder];
     [self.number resignFirstResponder];
-}
-
-- (IBAction)RSlider:(id)sender {
-
-}
-
-- (IBAction)GSlider:(id)sender {
-
-}
-
-- (IBAction)BSlider:(id)sender {
-
 }
 
 - (IBAction)Button:(id)sender {
 
 }
 
-- (IBAction)sliderChanged:(id)sender {
+CGFloat red = 128.0, green = 128.0, blue = 128.0;
 
+//Slider change handlers.
+- (IBAction)sliderChanged:(UISlider *)sender {
+    
+    float progress = sender.value;
+    
+    if (sender == _RSlider) {
+        self.RLabel.text = [NSString stringWithFormat:@"%5.1f", progress];
+        red = progress;
+    } else if (sender == _GSlider){
+        self.GLabel.text = [NSString stringWithFormat:@"%5.1f", progress];
+        green = progress;
+    } else if (sender == _BSlider) {
+        self.BLabel.text = [NSString stringWithFormat:@"%5.1f", progress];
+        blue = progress;
+    }
+    self.backgroundColor.backgroundColor = [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
 -(IBAction)switchChanged:(id)sender {
