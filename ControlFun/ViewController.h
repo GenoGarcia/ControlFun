@@ -34,15 +34,16 @@
 - (IBAction)sliderChanged:(id)sender;
 
 //Segment Controller
-@property (strong, nonatomic) IBOutlet UIView *Segment;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+//- (IBAction)segmentChanged:(id)sender;
 
 //Button
+@property (weak, nonatomic) IBOutlet UIButton *doButton;
 - (IBAction)Button:(id)sender;
 
 //Switches
+@property (weak, nonatomic) IBOutlet UISwitch *Switches;
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
--(IBAction)switchChanged:(id)sender;
 
 @end
 

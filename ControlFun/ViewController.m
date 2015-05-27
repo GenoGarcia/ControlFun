@@ -66,11 +66,38 @@ CGFloat red = 128.0, green = 128.0, blue = 128.0;
     self.backgroundColor.backgroundColor = [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
--(IBAction)switchChanged:(id)sender {
-
-}
+//Segment Handler.
+//-(IBAction)segmentChanged:(id)sender {
+//    switch(_segment.selectedSegmentIndex) {
+//        case 0:
+//            [_doButton setHidden: YES];
+//            [_Switches setHidden: NO];
+//            break;
+//        case 1:
+//            [_doButton setHidden: NO];
+//            [_Switches setHidden: YES];
+//            break;
+//    }
+//}
 
 - (IBAction)Button:(id)sender {
     
 }
+
+//Page Orientation Handler
+-(NSUInteger) supportedInterfaceOrientations {
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortraitUpsideDown);
+}
+
+//- (void)willAnimateRotationToInterfaceOrientation: (UIInterfaceOrientation) toInterfaceOrientation duration: (NSTimeInterval)duration {
+//    [self doLayoutForOrientation: toInterfaceOrientation];
+//}
+
+//-(void) doLayoutForOrientation: (UIInterfaceOrientation) {
+//    if (UIInterfaceOrientationIsPortrait(orientation)) {
+//        [self layoutPortrait];
+//    }else{
+//        [self layoutLandscape];
+//    }
+//}
 @end
