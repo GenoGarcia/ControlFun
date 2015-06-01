@@ -42,8 +42,8 @@
 - (IBAction)Button:(id)sender;
 
 //Switches
-@property (weak, nonatomic) IBOutlet UISwitch *Switches;
+@property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
-
+-(IBAction)switched:(UISwitch *)sender;
 @end
 

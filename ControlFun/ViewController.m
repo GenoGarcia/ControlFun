@@ -67,18 +67,27 @@ CGFloat red = 128.0, green = 128.0, blue = 128.0;
 }
 
 //Segment Handler.
-//-(IBAction)segmentChanged:(id)sender {
-//    switch(_segment.selectedSegmentIndex) {
-//        case 0:
-//            [_doButton setHidden: YES];
-//            [_Switches setHidden: NO];
-//            break;
-//        case 1:
-//            [_doButton setHidden: NO];
-//            [_Switches setHidden: YES];
-//            break;
-//    }
-//}
+-(IBAction)segmentChanged:(id)sender {
+    switch(_segment.selectedSegmentIndex) {
+        case 0:
+            [_doButton setHidden: YES];
+            [_rightSwitch setHidden: NO];
+            [_leftSwitch setHidden: NO];
+            break;
+        case 1:
+            [_doButton setHidden: NO];
+            [_rightSwitch setHidden: YES];
+            [_leftSwitch setHidden: YES];
+            break;
+    }
+}
+
+-(IBAction)switched:(UISwitch *)sender {
+    BOOL status = sender.isOn;
+    
+    [self.leftSwitch setOn:status animated: YES];
+    [self.rightSwitch setOn:status animated: YES];
+}
 
 - (IBAction)Button:(id)sender {
     
