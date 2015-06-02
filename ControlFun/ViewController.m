@@ -84,13 +84,27 @@ CGFloat red = 128.0, green = 128.0, blue = 128.0;
 
 -(IBAction)switched:(UISwitch *)sender {
     BOOL status = sender.isOn;
-    
     [self.leftSwitch setOn:status animated: YES];
     [self.rightSwitch setOn:status animated: YES];
 }
 
+//Button Action Handler.
 - (IBAction)Button:(id)sender {
-    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Are You Sure?" delegate:self cancelButtonTitle:@"No Way!" destructiveButtonTitle:@"Yes I'm Sure!" otherButtonTitles:nil];
+}
+
+-(void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != [actionSheet cancelButtonIndex]) {
+        NSString *msg = nil;
+        
+        if ([self.name.text length] > 0) {
+            msg = [NSString stringWithFormat:@"You can breathe easy, %@, everything went OK.", self.name.text];
+        }else{
+            msg = @"You can breathe easy, everything went OK.";
+        }
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Something was done" message:msg delegate:self cancelButtonTitle:@"Phew" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 //Page Orientation Handler

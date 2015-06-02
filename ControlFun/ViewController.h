@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface ViewController : UIViewController <UIActionSheetDelegate>
 
-@interface ViewController : UIViewController
 //Background Image
 @property (strong, nonatomic) IBOutlet UIView *Background;
 
@@ -35,7 +35,6 @@
 
 //Segment Controller
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
-//- (IBAction)segmentChanged:(id)sender;
 
 //Button
 @property (weak, nonatomic) IBOutlet UIButton *doButton;
@@ -46,4 +45,3 @@
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
 -(IBAction)switched:(UISwitch *)sender;
 @end
-
