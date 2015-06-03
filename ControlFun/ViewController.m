@@ -91,6 +91,7 @@ CGFloat red = 128.0, green = 128.0, blue = 128.0;
 //Button Action Handler.
 - (IBAction)Button:(id)sender {
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Are You Sure?" delegate:self cancelButtonTitle:@"No Way!" destructiveButtonTitle:@"Yes I'm Sure!" otherButtonTitles:nil];
+    [actionSheet showInView:self.view];
 }
 
 -(void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
